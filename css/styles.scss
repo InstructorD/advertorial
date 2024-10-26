@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #e5f0f3;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.ad {
+    text-align: center;
+    margin: 20px 40px 40px 40px;
+    grid-column: 1/-1;
+}
+
+.breadcrumbs {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #E43E3E;
+    color: #fff;
+    grid-column: 1/-1;
+    max-width: 300px;
+}
+
+main {
+    max-width: 940px;
+    background-color: #fff;
+    min-height: 100vh;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+hr {
+    grid-column: 1/-1;
+    margin: 20px 0;
+}
+
+.article-header {
+    div.avatar {
+        display: inline-block;
+        background-image: url(/images/avatar.jpg);
+        width: 50px;
+        height: 50px;
+        background-position: 55% 45%;
+        background-size: 150px;
+        border-radius: 50%;
+        position: relative;
+        top: 10px;
+        margin-right: 10px;
+    }
+}
+
+.featured-image {
+    height: 385px;
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0
+}
+
+.green-highlight {
+    padding: 20px;
+    background-color: #D1F8A2;
+    font-style: italic;
+    border-left: 5px solid #4A9D4A;
+}
+
+.yellow-highlight {
+    padding: 20px;
+    background-color: #F8F4A2;
+    font-style: italic;
+    border-left: 5px solid #9D9A4A;
+}
+
+.app-store-btn {
+    display: block;
+    margin: auto;
+    width: 240px;
+}
